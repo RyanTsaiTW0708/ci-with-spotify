@@ -34,9 +34,8 @@ jobs:
         python-version: "3.12"
 
     # TODO: Install uv on the runner
-    - name: Install uv
-      run: |
-        powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v7
 
 
     # The next steps use *run* to execute commands on the runner
