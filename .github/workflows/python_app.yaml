@@ -66,4 +66,8 @@ jobs:
       run: |
         uvx ruff format
 
+    - name: Type check with ty
+      run: |
+        uvx ty check
+
     
